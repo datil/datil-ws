@@ -275,7 +275,7 @@ form hr {
   }
 }
 
-.macroagente{ 
+.servicios{ 
   padding-bottom: @margin-datil;
   .row{
     margin-top: @margin-datil;
@@ -283,6 +283,10 @@ form hr {
   h3{
     color: @color-datil-alternative;
     font-weight: lighter;
+    strong{
+      font-weight: bolder;
+      display: block;
+    }
   }
   p{
     padding-top: 2.5%;
@@ -323,6 +327,9 @@ form hr {
         @media (min-width: @screen-md-min){
           padding: 5% 0;
         }
+      }
+      @media(max-width: @screen-xs-min){
+        margin-top: -5px;
       }
       @media (min-width: @screen-xs-min) and (max-width: @screen-sm-min){
         padding-top: 3%;
@@ -372,11 +379,11 @@ form hr {
   a{
     color: @color-datil;
   }
+  p{
+    margin-bottom: 5%;
+  }
   .info{
     width: 55%;
-    p{
-      margin-bottom: 30px;
-    }
     @media (max-width: @screen-md-min) {
       width: 85%;
     }
@@ -389,6 +396,9 @@ form hr {
 
 #acerca{
   padding-bottom: 40px;
+  h2{
+    color: #7E93AE;
+  }
 }
 
 #acerca, #acepta{
@@ -413,12 +423,13 @@ form hr {
     margin-bottom: 0;
     margin-top: 0;
     text-align: left;
-    &:nth-child(1){
-      color: @color-datil-alternative;
+    color: @color-datil-alternative;
+    margin-bottom: 50px;
+    strong{
+      color: @color-datil;
+      display: block;
     }
-    &:nth-child(2){
-      margin-bottom: 50px;
-    }
+
   }
   .btn{
     margin-top: 20px;
@@ -438,6 +449,14 @@ form hr {
 
 .about-datil{
   width: 55%;
+  @media (max-width: @screen-md-min){
+    width: 80%;
+  }
+  div{
+    @media (max-width: @screen-sm-min){
+      margin-bottom: 5%;
+    }
+  }
 }
 
 footer{

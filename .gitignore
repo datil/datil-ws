@@ -23,6 +23,5 @@ Thumbs.db
 
 node_modules
 dist
-public
 .tmp
 app/bower_components

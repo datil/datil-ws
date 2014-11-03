@@ -231,6 +231,10 @@ footer{
   color: #fff;
   padding-top: 2%;
   padding-bottom: 5%;
+  p{
+    color:#fff;
+    text-decoration:none;
+  }
 }
 
 /* Forms */
@@ -304,14 +308,21 @@ form hr {
     font-weight: lighter;
     margin-top: 0;
     margin-bottom: 15px;
+    white-space: nowrap;
     &:nth-child(2){
       font-weight: normal;
     }
     @media (max-width: @screen-xs-min) {
       font-size: 16px;
+      margin-bottom: 5px;
     }
-    @media (min-width: @screen-xs-min) and (max-width: @screen-md-min){
+    @media (min-width: @screen-xs-min) and (max-width: @screen-sm-min){
+      font-size: 30px;
+      margin-bottom: 10px;
+    }    
+    @media (min-width: @screen-sm-min) and (max-width: @screen-md-min){
       font-size: 40px;
+      margin-bottom: 10px;
     }
   }
 

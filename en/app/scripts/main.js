@@ -1,4 +1,4 @@
-if(navigator.language == 'es'){
+if(navigator.language.toLowerCase().indexOf("es") > -1){
 	window.location.href = "http://" + document.domain;
 }
 $(document).ready(function(){

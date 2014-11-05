@@ -13,3 +13,9 @@ $(document).scroll(function(){
 	    	$('.nav-datil .container').css({'border-bottom':'thin solid #fff'});
 	    } 
 });
+
+$('.single-page-nav').singlePageNav({
+    offset: $('.single-page-nav').outerHeight(),
+    filter: ':not(.external)',
+    updateHash: true
+});

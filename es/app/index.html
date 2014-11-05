@@ -30,6 +30,7 @@
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="scripts/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="scripts/ie-emulation-modes-warning.js"></script>
+    
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -54,19 +55,19 @@
           </button>
           <img class="logo" src="images/logo.png" alt="datil">
         </div>
-        <div class="navbar-collapse collapse">
+        <div class="navbar-collapse collapse single-page-nav">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="/en">English</a></li>
-            <li><a href="#">Características</a></li>
-            <li><a href="#">Compatibilidad</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#content">Características</a></li>
+            <li><a href="#datil-smartphone">Compatibilidad</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
           
         </div>
       </div>
     </div>
     
-    <div class="jumbotron">
+    <div id="main-banner" class="jumbotron">
       <div class="container">
         <div class="row">
            <div class="col-md-5">
@@ -275,7 +276,7 @@
     </div>
 
     <!-- Begin MailChimp Signup Form -->
-    <div id="mc_embed_signup" class="container">
+    <div id="contacto" class="container">
       <div class="row text-center">
         <h3>¿Deseas saber más? Subscríbete a nuestra lista de noticias</h3>
         <h4>¡No te preocupes, no te enviaremos spam!</h4>
@@ -329,6 +330,8 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
+
+    <script src="scripts/jquery.singlePageNav.min.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

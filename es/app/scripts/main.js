@@ -20,7 +20,6 @@ $(document).ready(function(){
 
 	$('.single-page-nav').singlePageNav({
                 offset: $('.single-page-nav').outerHeight(),
-                filter: ':not(.external)',
-                updateHash: true
+                filter: ':not(.lan)'
             });
 });

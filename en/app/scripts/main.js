@@ -2,7 +2,6 @@ if(navigator.language == 'es'){
 	window.location.href = "http://" + document.domain;
 }
 $(document).ready(function(){
-	alert(navigator.language);
 	var t = $('#content').offset().top - 80;
 
 	$(document).scroll(function(){
@@ -21,7 +20,6 @@ $(document).ready(function(){
 
 	$('.single-page-nav').singlePageNav({
                 offset: $('.single-page-nav').outerHeight(),
-                filter: ':not(.external)',
-                updateHash: true
+                filter: ':not(.lan)'
             });
 });

@@ -29,7 +29,10 @@
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="scripts/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- build:js({app,.tmp}) scripts/ie.js -->
     <script src="scripts/ie-emulation-modes-warning.js"></script>
+    <!-- endbuild -->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -315,7 +318,7 @@
           </div>
           <div class="col-md-6 text-right">
             <a href="#"><img src="images/twitter-datil.png"></a>
-            <a href="#"><img src="images/facebook-datil.png"></a>
+            <a href="https://www.facebook.com/datilmedia" target="_blank"><img src="images/facebook-datil.png"></a>
             <p>2014 DATIL</p>
           </div>
         </div>
@@ -329,8 +332,6 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-    <script src="scripts/jquery.singlePageNav.min.js"></script>
-    
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -360,8 +361,14 @@
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="scripts/ie10-viewport-bug-workaround.js"></script>
+        <!-- build:js({app,.tmp}) scripts/singlePage.js -->
+        <script src="scripts/jquery.singlePageNav.js"></script>
+        <!-- endbuild -->
+
+
+        <!-- build:js({app,.tmp}) scripts/ie10.js -->
+        <script src="scripts/ie10-viewport-bug-workaround.js"></script>
+        <!-- endbuild -->
   
 
 </body></html>

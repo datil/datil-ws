@@ -305,6 +305,16 @@ module.exports = function (grunt) {
     //   dist: {}
     // },
 
+    uglify: {
+       dist: {
+         files: {
+           '<%= config.dist %>/scripts/main.js': [
+             '<%= config.dist %>/scripts/{,*/}*.js'
+           ]
+         }
+       }
+     },
+
     // Copies remaining files to places other tasks can use
     copy: {
       dist: {

@@ -1,5 +1,6 @@
 if(navigator.language.toLowerCase().indexOf("en") > -1){
-	window.location.href = "http://" + document.domain + "/en";
+	if(location.search.split('force=')[1] == undefined || location.search.split('force=')[1] == 'false')
+		window.location.href = "http://" + document.domain + "/en";
 }
 $(document).ready(function(){
 	var t = $('#content').offset().top - 80;

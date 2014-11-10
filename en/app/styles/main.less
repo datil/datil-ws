@@ -340,21 +340,32 @@ form hr {
           padding: 5% 0;
         }
       }
-      @media(max-width: @screen-xs-min){
-        margin-top: -5px;
-      }
       @media (min-width: @screen-xs-min) and (max-width: @screen-sm-min){
         padding-top: 3%;
       }
       @media (min-width: @screen-sm-min) and (max-width: @screen-md-min){
-        padding-top: 12%;
+        padding-top: 8%;
       }
       @media (max-width: @screen-md-min) {
         padding-left: 48%;
+
+        form .btn {
+          margin-top: 10px;
+          margin-left: 72px;
+          display: block;
+        }
       }
       @media (min-width: @screen-md-min){
         padding-left: 5%;
         padding-top: 18%;
+      }
+      @media(max-width: @screen-xs-min){
+        margin-top: -5px;
+
+        form .btn {
+          margin-left: 0;
+          display: block;
+        }
       }
      
   }

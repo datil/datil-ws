@@ -365,6 +365,24 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
+    },
+
+    //CloudFiles
+    cloudfiles: {
+      prod: {
+        'user': 'eraad593apps',
+        'key': '',
+        'region': 'DFW',
+        'upload': [{
+          'container': 'datil',
+          'src': '<%= config.dist %>/images/**/*',
+          'dest': '/',
+          'stripcomponents': 1,
+          'purge': {
+            'files': ['index.html']
+          }
+        }]
+      }
     }
   });
 
@@ -419,7 +437,8 @@ module.exports = function (grunt) {
     'copy:dist',
     'rev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'cloudfiles'
   ]);
 
   grunt.registerTask('default', [

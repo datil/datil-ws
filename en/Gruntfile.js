@@ -375,12 +375,27 @@ module.exports = function (grunt) {
         'region': 'DFW',
         'upload': [{
           'container': 'datil',
-          'src': '<%= config.dist %>/images/**/*',
+          'src': ['<%= config.dist %>/images/**/*','<%= config.dist %>/fonts/**/*'],
           'dest': '/',
-          'stripcomponents': 1,
-          'purge': {
-            'files': ['index.html']
-          }
+          'stripcomponents': 1
+        }]
+      }
+    },
+
+    cdnify: {
+      someTarget: {
+        options: {
+          base: 'http://f544391c3182a4d6d705-942b9a5b70f61b0e73c09b867957d5d2.r42.cf1.rackcdn.com/public/en/',
+          html: {
+              'script[src]': false,
+              'link[rel=stylesheet]': false
+            }
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= config.dist %>',
+          src: '**/*.{css,html}',
+          dest: '<%= config.dist %>',
         }]
       }
     }
@@ -438,7 +453,8 @@ module.exports = function (grunt) {
     'rev',
     'usemin',
     'htmlmin',
-    'cloudfiles'
+    'cloudfiles',
+    'cdnify'
   ]);
 
   grunt.registerTask('default', [

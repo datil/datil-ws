@@ -22,6 +22,10 @@ Thumbs.db
 .idea
 
 node_modules
-dist
 .tmp
-app/bower_components
+bower_components
+
+public/images/*
+public/en/images/*
+public/fonts/*
+public/en/fonts/*

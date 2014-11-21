@@ -385,7 +385,7 @@ module.exports = function (grunt) {
     cdnify: {
       someTarget: {
         options: {
-          base: 'http://f544391c3182a4d6d705-942b9a5b70f61b0e73c09b867957d5d2.r42.cf1.rackcdn.com/public/en/',
+          base: 'https://f544391c3182a4d6d705-942b9a5b70f61b0e73c09b867957d5d2.ssl.cf1.rackcdn.com/public/en/',
           html: {
               'script[src]': false,
               'link[rel=stylesheet]': false

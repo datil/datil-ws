@@ -1,4 +1,0 @@
-cd es;
-grunt build --force;
-cd ../en;
-grunt build --force;

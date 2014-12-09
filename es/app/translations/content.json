@@ -1,0 +1,25 @@
+{
+    "es": {
+        "title": "Datil - Mundo",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+        "products": "Productos",
+        "about": "Nosotros",
+        "contact": "Contacto",
+        "login": "Iniciar Sesión",
+        "header-banner": "Facturación electrónica",
+        "text-banner": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+		"button-banner": "Regístrate ahora"    	
+    },
+
+    "en": {
+        "title": "Datil - World",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+        "products": "Products",
+        "about": "About Us",
+        "contact": "Contacto",
+        "login": "Log In",
+        "header-banner": "Electronic Invoicing",
+        "text-banner": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    	"button-banner": "Register now"
+    }
+}

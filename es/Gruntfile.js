@@ -43,6 +43,13 @@ module.exports = function (grunt) {
           '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
           '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
+      },
+      bake: {
+        files: [ 
+          'app/includes/**',
+          'app/translations/content.json'
+         ],
+        tasks: 'bake:build'
       }
     },
     connect: {
@@ -260,6 +267,17 @@ module.exports = function (grunt) {
         'svgmin',
         'htmlmin'
       ]
+    },
+    bake: {
+      build: {
+        options: {
+          content: "app/translations/content.json",
+          section: "es"
+        },
+        files: {
+          "app/index.html": "app/home.html"
+        }
+      }
     }
   });
 
@@ -302,7 +320,8 @@ module.exports = function (grunt) {
     'uglify',
     'copy',
     'rev',
-    'usemin'
+    'usemin',
+    'bake'
   ]);
 
   grunt.registerTask('default', [

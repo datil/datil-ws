@@ -47,7 +47,7 @@ module.exports = function (grunt) {
       bake: {
         files: [ 
           'app/includes/**',
-          'app/translations/content.json'
+          '../translations/content.json'
          ],
         tasks: 'bake:build'
       }
@@ -271,7 +271,7 @@ module.exports = function (grunt) {
     bake: {
       build: {
         options: {
-          content: "app/translations/content.json",
+          content: "../translations/content.json",
           section: "es"
         },
         files: {

@@ -5,10 +5,9 @@
         "products": "Productos",
         "about": "Nosotros",
         "contact": "Contacto",
-        "login": "Iniciar Sesión",
-        "header-banner": "Facturación electrónica",
-        "text-banner": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-		"button-banner": "Regístrate ahora"    	
+        "login": "Iniciar sesión",
+        "header-banner": "Gestiona tu negocio con <b>facturación electrónica</b>",
+        "button-banner": "¡Empieza AHORA!"    	
     },
 
     "en": {
@@ -17,9 +16,8 @@
         "products": "Products",
         "about": "About Us",
         "contact": "Contacto",
-        "login": "Log In",
+        "login": "Log in",
         "header-banner": "Electronic Invoicing",
-        "text-banner": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    	"button-banner": "Register now"
+        "button-banner": "Register now"
     }
 }

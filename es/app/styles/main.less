@@ -1,5 +1,5 @@
 // Core variables and mixins
-@import "../bower_components/bootstrap/less/variables.less";
+@import "variables.less";
 @import "../bower_components/bootstrap/less/mixins.less";
 
 // Reset
@@ -100,14 +100,27 @@
 	}
 }
 
-#header .navbar{
-	margin-bottom: 0;
+#header{ 
+	.navbar{
+		margin-bottom: 0;
+		.logo{
+			padding: 5px 0;
+		}
+		.navbar-right{
+			padding: (@navbar-height-datil - 34px)/2 0;
+		}
+	}
 }
 
 #carousel-datil{
 	article{
-		height: 450px;
+		height: 600px;
 		color: #fff;
 		padding: 90px 0px;
+		h1{
+			font-size: 70px;
+			font-weight: lighter;
+			margin-bottom: 10%;
+		}
 	}
 }

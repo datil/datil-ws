@@ -2,6 +2,9 @@
 // Variables
 // --------------------------------------------------
 
+@navbar-height-datil: 80px;
+@navbar-default-bg-datil: #fff;
+
 
 // Global values
 // --------------------------------------------------
@@ -90,9 +93,9 @@
 @line-height-large:              1.33;
 @line-height-small:              1.5;
 
-@border-radius-base:             4px;
-@border-radius-large:            6px;
-@border-radius-small:            3px;
+@border-radius-base:             0px;
+@border-radius-large:            0px;
+@border-radius-small:            0px;
 
 @component-active-color:         #fff;
 @component-active-bg:            @brand-primary;
@@ -260,14 +263,14 @@
 // -------------------------
 
 // Basics of a navbar
-@navbar-height:                    50px;
+@navbar-height:                    @navbar-height-datil;
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 
 @navbar-default-color:             #777;
-@navbar-default-bg:                #f8f8f8;
+@navbar-default-bg:                @navbar-default-bg-datil;
 @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
 
 // Navbar links
@@ -320,7 +323,7 @@
 // Navs
 // -------------------------
 
-@nav-link-padding:                          10px 15px;
+@nav-link-padding:                          10px 25px;
 @nav-link-hover-bg:                         @gray-lighter;
 
 @nav-disabled-link-color:                   @gray-light;

@@ -6,8 +6,11 @@
         "about": "Nosotros",
         "contact": "Contacto",
         "login": "Iniciar sesión",
-        "header-banner": "Gestiona tu negocio con <b>facturación electrónica</b>",
-        "button-banner": "¡Empieza AHORA!"    	
+        "header-banner": "Gestiona tu negocio con <strong>facturación electrónica</strong>",
+        "button-banner": "¡Empieza AHORA!",
+        "header-brief": "Comprometidos </br> <strong>con tu negocio</strong>",
+        "text-brief": "En Dátil trabajamos para acortar distancias entre consumidores, comercios, empresas privadas e instituciones gubernamentales, a través de herramientas de gestión amigables que llevan el comercio a un nuevo nivel.",
+        "button-more-about-us": "Conoce más sobre DÁTIL"  	
     },
 
     "en": {
@@ -18,6 +21,8 @@
         "contact": "Contacto",
         "login": "Log in",
         "header-banner": "Electronic Invoicing",
-        "button-banner": "Register now"
+        "button-banner": "Register now",
+        "header-brief": "Comprometidos con tu negocio",
+        "text-brief": "En Dátil trabajamos"  
     }
 }

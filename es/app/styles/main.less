@@ -53,6 +53,16 @@
 @import "../bower_components/font-awesome/less/font-awesome.less";
 @fa-font-path: "../fonts/font-awesome";
 
+a {
+   outline: 0;
+}
+
+h2{
+	color: @header-color;
+	font-weight: lighter;
+	font-size: 40px;
+}
+
 .browsehappy {
   margin: 0.2em 0; 
   background: #ccc; 
@@ -112,15 +122,46 @@
 	}
 }
 
+.btn-datil {
+  .button-variant(@btn-datil-color; @btn-datil-bg; @btn-datil-border);
+}
+
 #carousel-datil{
 	article{
 		height: 600px;
 		color: #fff;
-		padding: 90px 0px;
+		padding: 55px 0px;
 		h1{
 			font-size: 70px;
 			font-weight: lighter;
 			margin-bottom: 10%;
+			@media (max-width: @screen-md-max) {
+				font-size: 60px;
+			}
+			@media (max-width: @screen-sm-max) {
+				font-size: 50px;
+			}
+
+		}
+		@media (max-width: @screen-xs-max) {
+			padding-left: 5%;
 		}
 	}
+}
+
+section.container{
+	padding: 5% 0;
+	article{
+		p{
+			margin: 15% 0;
+			line-height: 25px;
+		}
+	}
+}
+
+footer{
+	background-color: @text-color-datil;
+	color: #FFF;
+	padding-top: 3%;
+	padding-bottom: 5%;
 }

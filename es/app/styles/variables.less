@@ -1,9 +1,21 @@
 //
 // Variables
 // --------------------------------------------------
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700,300,800);
+
 
 @navbar-height-datil: 80px;
 @navbar-default-bg-datil: #fff;
+@text-color-datil: #58595b;
+
+@brand-success-datil: #35cc1f;
+@brand-info-datil: #3eddd9;
+
+@btn-datil-color: @brand-info-datil;
+@btn-datil-bg: @navbar-default-bg-datil; 
+@btn-datil-border: @btn-datil-color;
+
+@header-color: #68b555;
 
 
 // Global values
@@ -31,7 +43,7 @@
 // -------------------------
 
 @body-bg:               #fff;
-@text-color:            @gray-dark;
+@text-color:            @text-color-datil;
 
 // Links
 // -------------------------
@@ -42,7 +54,7 @@
 // Typography
 // -------------------------
 
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
@@ -131,7 +143,7 @@
 @btn-primary-border:             darken(@btn-primary-bg, 5%);
 
 @btn-success-color:              #fff;
-@btn-success-bg:                 @brand-success;
+@btn-success-bg:                 @brand-success-datil;
 @btn-success-border:             darken(@btn-success-bg, 5%);
 
 @btn-warning-color:              #fff;
@@ -143,7 +155,7 @@
 @btn-danger-border:              darken(@btn-danger-bg, 5%);
 
 @btn-info-color:                 #fff;
-@btn-info-bg:                    @brand-info;
+@btn-info-bg:                    @brand-info-datil;
 @btn-info-border:                darken(@btn-info-bg, 5%);
 
 @btn-link-disabled-color:        @gray-light;

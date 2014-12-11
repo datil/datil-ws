@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700,300,800);
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 article,
 aside,
@@ -255,10 +256,10 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #333333;
+  color: #58595b;
   background-color: #ffffff;
 }
 input,
@@ -337,7 +338,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -1817,7 +1818,7 @@ textarea.input-lg {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #737373;
+  color: #98999b;
 }
 @media (min-width: 768px) {
   .form-inline .form-group {
@@ -2098,8 +2099,8 @@ fieldset[disabled] .btn-danger.active {
 }
 .btn-success {
   color: #ffffff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #35cc1f;
+  border-color: #2fb61c;
 }
 .btn-success:hover,
 .btn-success:focus,
@@ -2107,8 +2108,8 @@ fieldset[disabled] .btn-danger.active {
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
   color: #ffffff;
-  background-color: #47a447;
-  border-color: #398439;
+  background-color: #2ca91a;
+  border-color: #218114;
 }
 .btn-success:active,
 .btn-success.active,
@@ -2130,17 +2131,17 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #35cc1f;
+  border-color: #2fb61c;
 }
 .btn-success .badge {
-  color: #5cb85c;
+  color: #35cc1f;
   background-color: #fff;
 }
 .btn-info {
   color: #ffffff;
-  background-color: #5bc0de;
-  border-color: #46b8da;
+  background-color: #3eddd9;
+  border-color: #28d9d5;
 }
 .btn-info:hover,
 .btn-info:focus,
@@ -2148,8 +2149,8 @@ fieldset[disabled] .btn-success.active {
 .btn-info.active,
 .open .dropdown-toggle.btn-info {
   color: #ffffff;
-  background-color: #39b3d7;
-  border-color: #269abc;
+  background-color: #24ceca;
+  border-color: #1da7a3;
 }
 .btn-info:active,
 .btn-info.active,
@@ -2171,11 +2172,11 @@ fieldset[disabled] .btn-info:active,
 .btn-info.disabled.active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
-  background-color: #5bc0de;
-  border-color: #46b8da;
+  background-color: #3eddd9;
+  border-color: #28d9d5;
 }
 .btn-info .badge {
-  color: #5bc0de;
+  color: #3eddd9;
   background-color: #fff;
 }
 .btn-link {
@@ -4398,7 +4399,7 @@ a.thumbnail.active {
 }
 .thumbnail .caption {
   padding: 9px;
-  color: #333333;
+  color: #58595b;
 }
 .alert {
   padding: 15px;
@@ -7294,6 +7295,14 @@ td.visible-print {
 .fa-plus-square-o:before {
   content: "\f196";
 }
+a {
+  outline: 0;
+}
+h2 {
+  color: #68b555;
+  font-weight: lighter;
+  font-size: 40px;
+}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -7346,14 +7355,83 @@ td.visible-print {
 #header .navbar .navbar-right {
   padding: 23px 0;
 }
+.btn-datil {
+  color: #3eddd9;
+  background-color: #ffffff;
+  border-color: #3eddd9;
+}
+.btn-datil:hover,
+.btn-datil:focus,
+.btn-datil:active,
+.btn-datil.active,
+.open .dropdown-toggle.btn-datil {
+  color: #3eddd9;
+  background-color: #ebebeb;
+  border-color: #21bdb9;
+}
+.btn-datil:active,
+.btn-datil.active,
+.open .dropdown-toggle.btn-datil {
+  background-image: none;
+}
+.btn-datil.disabled,
+.btn-datil[disabled],
+fieldset[disabled] .btn-datil,
+.btn-datil.disabled:hover,
+.btn-datil[disabled]:hover,
+fieldset[disabled] .btn-datil:hover,
+.btn-datil.disabled:focus,
+.btn-datil[disabled]:focus,
+fieldset[disabled] .btn-datil:focus,
+.btn-datil.disabled:active,
+.btn-datil[disabled]:active,
+fieldset[disabled] .btn-datil:active,
+.btn-datil.disabled.active,
+.btn-datil[disabled].active,
+fieldset[disabled] .btn-datil.active {
+  background-color: #ffffff;
+  border-color: #3eddd9;
+}
+.btn-datil .badge {
+  color: #ffffff;
+  background-color: #fff;
+}
 #carousel-datil article {
   height: 600px;
   color: #fff;
-  padding: 90px 0px;
+  padding: 55px 0px;
 }
 #carousel-datil article h1 {
   font-size: 70px;
   font-weight: lighter;
   margin-bottom: 10%;
+}
+@media (max-width: 1199px) {
+  #carousel-datil article h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 991px) {
+  #carousel-datil article h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 767px) {
+  #carousel-datil article {
+    padding-left: 5%;
+  }
+}
+section.container {
+  padding: 5% 0;
+}
+section.container article p {
+  margin: 15% 0;
+  line-height: 25px;
+}
+footer {
+  background-color: #58595b;
+  color: #FFF;
+  padding-top: 3%;
+  padding-bottom: 5%;
 }
 /*# sourceMappingURL=/styles/main.css.map */

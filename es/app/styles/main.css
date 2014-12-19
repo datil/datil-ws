@@ -7822,4 +7822,15 @@ footer hr {
   background-color: #FFA655;
   border-color: #FFA655;
 }
+#page-f-e .navbar .container {
+  background: url('../images/logo-inverse.png') no-repeat left;
+  background-size: 179px 70px;
+}
+#page-f-e .navbar .container ul li a {
+  color: #fff;
+}
+#page-f-e .navbar .container .btn-datil {
+  color: #fff;
+  border-color: #fff;
+}
 /*# sourceMappingURL=/styles/main.css.map */

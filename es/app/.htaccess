@@ -340,10 +340,14 @@ FileETag None
 <IfModule mod_rewrite.c>
   Options +FollowSymlinks
 # Options +SymLinksIfOwnerMatch
-  RewriteEngine On
+#  RewriteEngine On
 # RewriteBase /
 </IfModule>
 
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)\.html$ /$1 [L,R=301] 
 
 # ----------------------------------------------------------------------
 # Suppress or force the "www." at the beginning of URLs

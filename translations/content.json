@@ -5,6 +5,7 @@
         "products": "Productos",
         "about": "Nosotros",
         "contact": "Contacto",
+        "register": "Registro",
         "login": "Iniciar sesión",
         "header-banner": "Haz crecer <strong>tu negocio y tus ventas hoy!</strong>",
         "button-banner": "¡Empieza AHORA!",
@@ -20,7 +21,19 @@
         "text-waiting-for-datil": "¿Qué esperas para empezar <strong>con tu negocio?</strong>",
         "button-im-ready": "¡Estoy listo!",
         "country": "País",
-        "language": "Idioma"
+        "language": "Idioma",
+        "e-invoicing": "Facturación electrónica",
+        "card-payments": "Pagos con tarjetas",
+        "business-statistics": "Estadísticas de negocio",
+        "pos": "Punto de venta",
+        "credit-score": "Score crediticio de clientes",
+        "philosophy": "Filosofía Dátil",
+        "company": "La empresa",
+        "team": "El equipo",
+        "work-with-us": "Trabaje con nosotros",
+        "online-consultant": "Asesor online",
+        "subscribe": "Suscríbete",
+        "your-account": "Tu Cuenta"
     },
 
     "en": {

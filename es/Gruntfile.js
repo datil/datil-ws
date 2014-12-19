@@ -275,7 +275,8 @@ module.exports = function (grunt) {
           section: "es"
         },
         files: {
-          "app/index.html": "app/home.html"
+          "app/index.html": "app/home.html",
+          "app/facturacion-electronica.html": "app/e-invoicing-base.html"
         }
       }
     }
@@ -311,6 +312,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('build', [
+    'bake',
     'clean:dist',
     'copy:server',
     'useminPrepare',
@@ -320,8 +322,7 @@ module.exports = function (grunt) {
     'uglify',
     'copy',
     'rev',
-    'usemin',
-    'bake'
+    'usemin'
   ]);
 
   grunt.registerTask('default', [

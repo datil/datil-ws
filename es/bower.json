@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "dependencies": {
     "bootstrap": "~3.0.0",
+    "bootstrap-select": "1.6.3",
     "font-awesome": "~4.0.0",
     "modernizr": "~2.6.2",
     "jquery": "~1.9.1"

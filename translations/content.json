@@ -6,11 +6,21 @@
         "about": "Nosotros",
         "contact": "Contacto",
         "login": "Iniciar sesión",
-        "header-banner": "Gestiona tu negocio con <strong>facturación electrónica</strong>",
+        "header-banner": "Haz crecer <strong>tu negocio y tus ventas hoy!</strong>",
         "button-banner": "¡Empieza AHORA!",
-        "header-brief": "Comprometidos </br> <strong>con tu negocio</strong>",
-        "text-brief": "En Dátil trabajamos para acortar distancias entre consumidores, comercios, empresas privadas e instituciones gubernamentales, a través de herramientas de gestión amigables que llevan el comercio a un nuevo nivel.",
-        "button-more-about-us": "Conoce más sobre DÁTIL"  	
+        "header-brief": "Creemos en el comercio </br> <strong>para todos</strong>",
+        "text-brief": "En Dátil trabajamos para acortar distancias y generar nuevas posibilidades entre consumidores, comercios, empresas privadas e instituciones gubernamentales. </br> </br>Creamos herramientas digitales de gestión que apoyan al crecimiento de tu negocio y llevan el comercio a un nuevo nivel.",
+        "button-brief": "Conoce nuestra filosofía",
+        "header-why-datil": "¿Por qué usar Dátil </br> <strong>para mi negocio?</strong>",
+        "check-why-datil": "Fácil y simple",
+        "organizer-why-datil": "Orden y organización",
+        "locker-why-datil": "Total seguridad",
+        "button-more-about-us": "Conoce más sobre DÁTIL",
+        "button-clients-testimonials": "Conoce los testimonios de nuestros clientes",
+        "text-waiting-for-datil": "¿Qué esperas para empezar <strong>con tu negocio?</strong>",
+        "button-im-ready": "¡Estoy listo!",
+        "country": "País",
+        "language": "Idioma"
     },
 
     "en": {

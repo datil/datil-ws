@@ -53,15 +53,29 @@
 @import "../bower_components/font-awesome/less/font-awesome.less";
 @fa-font-path: "../fonts/font-awesome";
 
+@import "../bower_components/bootstrap-select/less/bootstrap-select.less";
+
+
+//Global elements
+
+body{
+	font-size: 15px;
+}
+
+b, strong{
+	font-weight: 600;
+}
+
 a {
    outline: 0;
 }
 
 h2{
-	color: @header-color;
 	font-weight: lighter;
 	font-size: 40px;
 }
+
+//Classes
 
 .browsehappy {
   margin: 0.2em 0; 
@@ -123,17 +137,69 @@ h2{
 }
 
 .btn-datil {
-  .button-variant(@btn-datil-color; @btn-datil-bg; @btn-datil-border);
+  .button-variant(@btn-datil-color; transparent; @btn-datil-border);
+}
+.btn-datil-inverse {
+  .button-variant(#fff; transparent; #fff);
+}
+
+.container-full{
+	margin: 0 auto;
+    width: 100%;
+    .row{
+    	margin: 0;
+    }
+}
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+.bg-gray{
+	background-color: @bg-gray-datil;
+}
+
+.navbar-nav{
+	font-size: 16px;
 }
 
 #carousel-datil{
 	article{
+		width: 60%;
 		height: 600px;
 		color: #fff;
 		padding: 55px 0px;
 		h1{
-			font-size: 70px;
-			font-weight: lighter;
+			font-size: 65px;
+			font-weight: 300;
 			margin-bottom: 10%;
 			@media (max-width: @screen-md-max) {
 				font-size: 60px;
@@ -149,12 +215,19 @@ h2{
 	}
 }
 
-section.container{
-	padding: 5% 0;
-	article{
-		p{
-			margin: 15% 0;
-			line-height: 25px;
+section{
+	&.container, &.container-full{
+		padding: 5% 0;
+		article{
+			p{
+				margin: 15% 0;
+				line-height: 25px;
+			}
+		}
+	}
+	&.container-full{
+		.row{
+			padding: 5% 0;		
 		}
 	}
 }
@@ -163,5 +236,65 @@ footer{
 	background-color: @text-color-datil;
 	color: #FFF;
 	padding-top: 3%;
-	padding-bottom: 5%;
+	header{
+		h5{
+			font-weight: bold;
+		}
+	}
+	ul{
+		li{
+			a{
+				color: #fff;
+			}
+		}
+	}
+	.logo-footer{
+		width: 10%;
+	}
+	footer{
+		margin-top: 3%;
+		background-color: @bg-gray-strong-datil;
+		padding: 5% 10% 2% 10%;
+		hr{
+			margin-top: 5%;
+		}
+		.pull-left{
+			max-width: 150px;
+			a{
+				margin-right: 20px;
+			}
+		}
+	}
+	hr{
+		border-width: 0.25px 0px 0px;
+	}
+}
+
+#page{
+	header{
+		.navbar{
+			.container{
+				background: url('../images/logo.png') no-repeat left;
+				background-size: 179px 70px;
+			}
+		}
+	}
+	.why-datil-features{
+		width: 70%;
+		margin: 10% auto;
+	}
+	h3{
+		margin-bottom: 25px;
+	}
+}
+
+#bs-example-navbar-collapse-1{
+	margin-left: 15%;
+}
+
+#page-f-e{
+	.navbar{
+		background-color: #FFA655;
+		border-color: #FFA655;
+	}
 }

@@ -7811,6 +7811,10 @@ footer hr {
 #page h3 {
   margin-bottom: 25px;
 }
+#page .clients article img {
+  min-height: 70px;
+  width: 90%;
+}
 #bs-example-navbar-collapse-1 {
   margin-left: 15%;
 }

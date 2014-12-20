@@ -55,8 +55,12 @@
 
 @import "../bower_components/bootstrap-select/less/bootstrap-select.less";
 
+@import "faq.less";
+@import "gmaps.less";
+
 
 //Global elements
+
 
 body{
 	font-size: 15px;
@@ -66,9 +70,10 @@ b, strong{
 	font-weight: 600;
 }
 
-a {
+a, a:focus, *:focus {
    outline: 0;
 }
+
 
 h2{
 	font-weight: lighter;
@@ -270,7 +275,22 @@ footer{
 	}
 }
 
-#page{
+
+.section-gmap {
+    padding: 0;
+    background: #ddd;
+    iframe {
+	    width: 100%;
+	    height: 480px;
+	    display: block;
+	}
+}
+
+#bs-example-navbar-collapse-1{
+	margin-left: 15%;
+}
+
+#page, #page-about-us, #page-contact{
 	header{
 		.navbar{
 			.container{
@@ -296,10 +316,6 @@ footer{
 	}
 }
 
-#bs-example-navbar-collapse-1{
-	margin-left: 15%;
-}
-
 #page-f-e{
 	.navbar{
 		.container{
@@ -319,5 +335,15 @@ footer{
 		}
 		background-color: #FFA655;
 		border-color: #FFA655;
+	}
+	.cd-faq{
+		a {
+		  	text-decoration: none;
+		}
+		.cd-faq-items{
+			a{
+
+			}
+		}
 	}
 }

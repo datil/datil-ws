@@ -277,7 +277,9 @@ module.exports = function (grunt) {
         },
         files: {
           "app/index.html": "app/home.html",
-          "app/facturacion-electronica.html": "app/e-invoicing-base.html"
+          "app/facturacion-electronica.html": "app/e-invoicing-base.html",
+          "app/nosotros.html": "app/about-us-base.html",
+          "app/contacto.html": "app/contact-base.html"
         }
       }
     }

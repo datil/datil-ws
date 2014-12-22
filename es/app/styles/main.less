@@ -82,6 +82,16 @@ h2{
 
 //Classes
 
+.text-uppercase{
+	text-transform: uppercase;
+}
+
+.affix {
+  top: 0px;
+  width: 100%;
+  z-index: 1000;
+}
+
 .browsehappy {
   margin: 0.2em 0; 
   background: #ccc; 
@@ -198,8 +208,7 @@ h2{
 
 #carousel-datil{
 	article{
-		width: 60%;
-		height: 600px;
+		height: 650px;
 		color: #fff;
 		padding: 55px 0px;
 		h1{
@@ -291,6 +300,11 @@ footer{
 }
 
 #page, #page-about-us, #page-contact{
+	#carousel-datil{
+		article{
+			width: 60%;
+		}
+	}
 	header{
 		.navbar{
 			.container{
@@ -317,24 +331,37 @@ footer{
 }
 
 #page-f-e{
-	.navbar{
-		.container{
-			background: url('../images/logo-inverse.png') no-repeat left;
-			background-size: 179px 70px;
-			ul{
-				li{
-					a{
-						color: #fff;
+	header{
+		.navbar{
+			.container{
+				background: url('../images/logo-inverse.png') no-repeat left;
+				background-size: 179px 70px;
+				ul{
+					li{
+						a{
+							color: #fff;
+						}
 					}
 				}
+				.btn-datil{
+					color: #fff;
+					border-color: #fff;
+				}
 			}
-			.btn-datil{
-				color: #fff;
-				border-color: #fff;
+			background-color: #FFA655;
+			border-color: #FFA655;
+		}
+	}
+	.navbar-lower{
+		background-color: #F5F5F5;
+		min-height: 50px;
+		.nav{
+			a{
+				padding-top: 25px;
+				padding-bottom: 25px;
+				font-size: 14px;
 			}
 		}
-		background-color: #FFA655;
-		border-color: #FFA655;
 	}
 	.cd-faq{
 		a {

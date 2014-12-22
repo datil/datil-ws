@@ -7659,6 +7659,7 @@ td.visible-print {
   }
   .cd-faq-categories.is-fixed {
     /* top and left value assigned in jQuery */
+    top: 90px;
     position: fixed;
   }
   .no-js .cd-faq-categories {
@@ -7999,6 +8000,14 @@ h2 {
   font-weight: lighter;
   font-size: 40px;
 }
+.text-uppercase {
+  text-transform: uppercase;
+}
+.affix {
+  top: 0px;
+  width: 100%;
+  z-index: 1000;
+}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -8178,8 +8187,7 @@ fieldset[disabled] .btn-datil-inverse.active {
   font-size: 16px;
 }
 #carousel-datil article {
-  width: 60%;
-  height: 600px;
+  height: 650px;
   color: #fff;
   padding: 55px 0px;
 }
@@ -8258,6 +8266,11 @@ footer hr {
 #bs-example-navbar-collapse-1 {
   margin-left: 15%;
 }
+#page #carousel-datil article,
+#page-about-us #carousel-datil article,
+#page-contact #carousel-datil article {
+  width: 60%;
+}
 #page header .navbar .container,
 #page-about-us header .navbar .container,
 #page-contact header .navbar .container {
@@ -8281,20 +8294,29 @@ footer hr {
   min-height: 70px;
   width: 90%;
 }
-#page-f-e .navbar {
+#page-f-e header .navbar {
   background-color: #FFA655;
   border-color: #FFA655;
 }
-#page-f-e .navbar .container {
+#page-f-e header .navbar .container {
   background: url('../images/logo-inverse.png') no-repeat left;
   background-size: 179px 70px;
 }
-#page-f-e .navbar .container ul li a {
+#page-f-e header .navbar .container ul li a {
   color: #fff;
 }
-#page-f-e .navbar .container .btn-datil {
+#page-f-e header .navbar .container .btn-datil {
   color: #fff;
   border-color: #fff;
+}
+#page-f-e .navbar-lower {
+  background-color: #F5F5F5;
+  min-height: 50px;
+}
+#page-f-e .navbar-lower .nav a {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 14px;
 }
 #page-f-e .cd-faq a {
   text-decoration: none;

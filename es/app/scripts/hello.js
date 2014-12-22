@@ -1,8 +1,10 @@
-
-/* jshint white:false */
-
 (function() {
-  'use strict';
-  console.log('\'Allo from CoffeeScript!');
+  $(document).ready(function() {
+    $(".navbar-lower").affix({
+      offset: {
+        top: $("#header").outerHeight() + $("#carousel-datil").outerHeight()
+      }
+    });
+  });
 
 }).call(this);

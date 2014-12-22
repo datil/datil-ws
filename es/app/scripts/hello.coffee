@@ -1,4 +1,5 @@
-### jshint white:false ###
+$(document).ready ->
+  $(".navbar-lower").affix offset:
+    top: $("#header").outerHeight() + $("#carousel-datil").outerHeight()
 
-'use strict'
-console.log '\'Allo from CoffeeScript!'
+  return

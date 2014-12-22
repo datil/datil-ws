@@ -25,3 +25,8 @@ node_modules
 .tmp
 bower_components
 public
+
+index.html
+facturacion-electronica.html
+contacto.html
+nosotros.html

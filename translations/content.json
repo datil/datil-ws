@@ -40,7 +40,17 @@
         "work-with-us": "Trabaje con nosotros",
         "online-consultant": "Asesor online",
         "subscribe": "Suscríbete",
-        "your-account": "Tu Cuenta"
+        "your-account": "Tu Cuenta",
+        "text-contact": "Contáctanos",
+        "text-more-info": "Llámanos o envíanos un email y te contactaremos tan pronto podamos.",
+        "call-us": "Llámanos",
+        "office": "Oficina",
+        "info": "Información",
+        "subject": "Asunto",
+        "names": "Nombres",
+        "email": "Email",
+        "message": "Mensaje",
+        "send-message": "Enviar mensaje"
     },
 
     "en": {

@@ -8215,6 +8215,10 @@ section.container,
 section.container-full {
   padding: 5% 0;
 }
+section.container h2,
+section.container-full h2 {
+  margin-bottom: 5%;
+}
 section.container article p,
 section.container-full article p {
   margin: 15% 0;

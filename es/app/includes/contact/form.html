@@ -1,0 +1,40 @@
+<section id="contact" class="container">
+    <h2 class="section-title text-center"><span>{{text-contact}}</span></h2>
+    <div class="row">
+      <aside class="col-md-6 text-left">
+        <p>{{text-more-info}}</p>
+        <address class="adr">
+          <div class="phone"><i class="fa fa-phone"> {{call-us}}</i> <span class="tel">+593 - 4 - 6029400</span></div>
+          <div class="address"><i class="fa fa-home"> {{office}}</i> Víctor Emilio Estrada 112 y Circunvalación Norte, Edificio C3, Piso 2</div>
+          <div class="email"><i class="fa fa-envelope"> {{info}}</i> <a href="mailto:#">contacto@datilmedia.com</a></div>
+        </address>        
+      </aside>
+      <section class="main-action col-md-6">
+        <form role="form">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label class="sr-only">{{subject}}</label>
+                <input type="text" class="form-control" placeholder="{{subject}}">
+              </div>
+              <div class="form-group">
+                <label class="sr-only">{{names}}</label>
+                <input type="text" class="form-control" placeholder="{{names}}">
+              </div>
+              <div class="form-group">
+                <label class="sr-only">{{email}}</label>
+                <input type="email" class="form-control" placeholder="{{email}}">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label class="sr-only">{{message}}</label>
+                <textarea class="form-control" placeholder="{{message}}" style="height: 100px" rows="6"></textarea>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-success">{{send-message}}</button>
+        </form>
+      </section>
+    </div>
+</section>

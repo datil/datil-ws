@@ -1,0 +1,200 @@
+#intro-datil {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  article {
+    height: 600px;
+    color: #fff;
+    padding: 55px 0px;
+    z-index: 2;
+    position: relative;
+    h1{
+      font-size: 40px;
+      font-weight: 300;
+      margin-top: 136px;
+      margin-bottom: 10%;
+      @media (max-width: @screen-md-max) {
+        font-size: 60px;
+      }
+      @media (max-width: @screen-sm-max) {
+        font-size: 50px;
+      }
+
+    }
+    @media (max-width: @screen-xs-max) {
+      padding-left: 5%;
+    }
+  }
+  .btn {
+    width: 190px;
+    margin-bottom: 55px;
+  }
+  .media-invoicing {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../images/home/banner.jpg) no-repeat center; position: relative; z-index: 1;
+    background-size: cover;
+  }
+  .intro-text {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    z-index: 3;
+    color: #fff;
+  }
+}
+
+.section-intro .intro-mask {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  position: absolute;
+  background-image: -webkit-linear-gradient(top, rgba(140,128,117,0.35) 0%, rgba(140,128,117,0.2) 100%);
+  background-image: -o-linear-gradient(top, rgba(140,128,117,0.35) 0%, rgba(140,128,117,0.2) 100%);
+  background-image: linear-gradient(to bottom, rgba(140,128,117,0.35) 0%, rgba(140,128,117,0.2) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8c807500', endColorstr='#8c807500', GradientType=0);
+}
+
+#main-features {
+  width: 600px;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+.feature-box {
+  width: 180px;
+  margin: 0 10px;
+  float: left;
+  text-align: center;
+  border: 1px solid @gray-lighter;
+
+  &.easy {
+    .feature-box-content {
+      background-image: url("../images/home/check-circle.png");
+    }
+  }
+  &.integration {
+    .feature-box-content {
+      background-image: url("../images/home/puzzle.png");
+    }
+  }
+  &.secure {
+    .feature-box-content {
+      background-image: url("../images/home/lock.png");
+    }
+  }
+
+  h2.feature-box-content {
+    padding: 110px 0 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 700;
+    span {
+      font-weight: 400;
+    }
+
+    background-position: 50% 17.5px;
+    background-repeat: no-repeat;
+
+    & + div {
+      margin-bottom: 20px;
+    }
+
+  }
+  a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: @text-color;
+
+    &:hover {
+      background-color: lighten(@gray-light, 50);
+      text-decoration: none;
+      p {
+        text-decoration: underline;
+      }
+    }
+  }
+  .feature-box-footer {
+    line-height: 37px;
+    border-top: 1px solid @gray-lighter;
+    p {
+      color: @link-color;
+      margin: 0;
+    }
+  }
+}
+
+#devices {
+  background: url("../images/home/banner-devices.jpg") no-repeat top center #f5f7f9;
+  padding-top: 88px;
+  text-align: center;
+  h2 {
+    color: #fff;
+    font-size: 30px;
+    background: url("../images/home/dispositivos-datil.png") no-repeat;
+    background-position: center bottom;
+    padding-bottom: 420px;
+    margin-bottom: 0;
+    span {
+      display: block;
+      line-height: inherit;
+    }
+  }
+  p {
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 26px;
+  }
+}
+.features {
+  text-align: center;
+  width: 620px;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  .feature {
+    width: 200px;
+    margin: 0 auto 40px;
+    .icon {
+      background: url(../images/home/features-icons-sprite.png) no-repeat;
+      width: 130px;
+      height: 100px;
+      margin: 8px auto;
+    }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+      .icon {
+        background: url(../images/home/features-icons-sprite@2x.png) no-repeat;
+      }
+    }
+
+    &.branches .icon {
+      background-position: 0 -150px;
+    }
+    &.backups .icon {
+      background-position: 0 -250px;
+    }
+    &.web .icon {
+      background-position: 0 -350px;
+    }
+    &.email .icon {
+      background-position: 0 -450px;
+    }
+    &.receipts .icon {
+      background-position: 0 -550px;
+    }
+    &.templates .icon {
+      background-position: 0 -650px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "datil-ws",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap": "~3.3",
+    "bootstrap-select": "1.6.3",
+    "font-awesome": "~4.2.0",
+    "modernizr": "~2.6.2",
+    "jquery": "~1.11"
+  },
+  "devDependencies": {}
+}
+

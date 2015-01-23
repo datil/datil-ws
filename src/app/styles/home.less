@@ -69,6 +69,12 @@
   width: 600px;
   margin: 0 auto;
   padding: 70px 0;
+
+  @media (max-device-width: @screen-xs-min) and (orientation: portrait) {
+    width: 100%;
+    margin: 0;
+    padding: 50px 52px;
+  }
 }
 .feature-box {
   width: 180px;
@@ -76,6 +82,12 @@
   float: left;
   text-align: center;
   border: 1px solid @gray-lighter;
+
+  @media (max-device-width: @screen-xs-min) and (orientation: portrait) {
+    width: 100%;
+    margin: 0;
+    margin-bottom: -1px;
+  }
 
   &.easy {
     .feature-box-content {
@@ -137,6 +149,7 @@
 
 #devices {
   background: url("../images/home/banner-devices.jpg") no-repeat top center #f5f7f9;
+  background-size: cover;
   padding-top: 88px;
   text-align: center;
   h2 {
@@ -152,7 +165,7 @@
     }
   }
   p {
-    width: 380px;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 26px;
@@ -160,21 +173,30 @@
 }
 .features {
   text-align: center;
-  width: 620px;
+  // width: 620px;
   padding-top: 100px;
   padding-bottom: 60px;
   .feature {
-    width: 200px;
+    width: 270px;
     margin: 0 auto 40px;
+    p.lead {
+      font-size: 18px;
+    }
     .icon {
       background: url(../images/home/features-icons-sprite.png) no-repeat;
       width: 130px;
       height: 100px;
-      margin: 8px auto;
+      margin: 12px auto;
     }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
       .icon {
         background: url(../images/home/features-icons-sprite@2x.png) no-repeat;
+        background-size: 235px 751px;
+      }
+    }
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+      & {
+        width: 100%;
       }
     }
 

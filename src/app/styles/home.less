@@ -28,7 +28,8 @@
   }
   .btn {
     width: 190px;
-    margin-bottom: 55px;
+    margin-bottom: 48px;
+    margin-top: 28px;
   }
   .media-invoicing {
     height: 100%;
@@ -44,10 +45,27 @@
   }
   .intro-text {
     position: absolute;
-    top: 30%;
+    top: 23%;
     width: 100%;
     z-index: 3;
     color: #fff;
+  }
+  .intro.odometer {
+    font-size: 60px;
+    font-family: @font-datil-regular;
+    border: 1px solid #fff;
+    border-radius: 50px 50px 50px 50px;
+    padding-left: 80px;
+    padding-right: 40px;
+    margin-bottom: 10px;
+    margin-left: -10px;
+    &:before {
+      content: "$";
+      display: inline-block;
+      float: left;
+      margin-left: -40px;
+      line-height: 90px;
+    }
   }
 }
 
@@ -81,7 +99,7 @@
   margin: 0 10px;
   float: left;
   text-align: center;
-  border: 1px solid @gray-lighter;
+  border: 1px solid @gray-light;
 
   @media (max-device-width: @screen-xs-min) and (orientation: portrait) {
     width: 100%;
@@ -130,7 +148,7 @@
     color: @text-color;
 
     &:hover {
-      background-color: lighten(@gray-light, 50);
+      background-color: @gray-lighter;
       text-decoration: none;
       p {
         text-decoration: underline;
@@ -139,7 +157,7 @@
   }
   .feature-box-footer {
     line-height: 37px;
-    border-top: 1px solid @gray-lighter;
+    border-top: 1px solid @gray-light;
     p {
       color: @link-color;
       margin: 0;
@@ -148,27 +166,30 @@
 }
 
 #devices {
-  background: url("../images/home/banner-devices.jpg") no-repeat top center #f5f7f9;
-  background-size: cover;
-  padding-top: 88px;
-  text-align: center;
+  background-color: @gray-lighter;
+  padding: 76px 0;
+  width: 100%;
   h2 {
-    color: #fff;
-    font-size: 30px;
-    background: url("../images/home/dispositivos-datil.png") no-repeat;
+    font-size: 38px;
     background-position: center bottom;
-    padding-bottom: 420px;
-    margin-bottom: 0;
+    margin-bottom: 60px;
     span {
       display: block;
       line-height: inherit;
     }
   }
   p {
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    // width: 260px;
+    margin-left: 0;
+    // margin-right: auto;
     margin-bottom: 26px;
+  }
+  .devices {
+    position: relative;
+    z-index: 1;
+    img {
+      position: absolute;
+    }
   }
 }
 .features {
@@ -188,7 +209,7 @@
       height: 100px;
       margin: 12px auto;
     }
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icon {
         background: url(../images/home/features-icons-sprite@2x.png) no-repeat;
         background-size: 235px 751px;
@@ -218,5 +239,75 @@
     &.templates .icon {
       background-position: 0 -650px;
     }
+  }
+}
+
+.security-banner {
+  min-height: 383px;
+  background: url(../images/home/banner-seguridad.jpg) no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  h1 {
+    margin-top: 90px;
+    font-size: 30px;
+    padding-bottom: 110px;
+    background: url(../images/home/lock-outline.png) no-repeat bottom center;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: url(../images/home/lock-outline@2x.png) no-repeat bottom center;
+      background-size: 75px;
+    }
+  }
+  p {
+    width: 340px;
+    margin: 20px auto;
+    @media (max-device-width: @screen-xs-min) {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+}
+
+.featurette {
+  padding: 50px 0;
+  div.info {
+    margin-top: 30px;
+    width: 300px;
+  }
+  div.img {
+    text-align: left;
+    padding-left: 50px;
+  }
+}
+
+.featurette.right {
+  .info {
+    float: right;
+  }
+}
+
+.featurette.left {
+  .info {
+    // float: left;
+  }
+}
+
+.featurette.backup {
+  background-color: @gray-alt;
+}
+
+.featurette.security {
+  background-color: @gray-lighter;
+}
+
+.call-to-action {
+  background-color: #d2d9dd;
+  padding: 42px 0;
+  p {
+    line-height: 34px;
+  }
+  .text-center {
+    width: 630px;
+    margin: 0 auto;
   }
 }

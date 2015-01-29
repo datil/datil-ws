@@ -6,7 +6,8 @@
     "bootstrap-select": "1.6.3",
     "font-awesome": "~4.2.0",
     "modernizr": "~2.6.2",
-    "jquery": "~1.11"
+    "jquery": "~1.11",
+    "odometer": "0.4"
   },
   "devDependencies": {}
 }

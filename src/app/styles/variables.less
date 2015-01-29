@@ -1,7 +1,6 @@
 //
 // Variables
 // --------------------------------------------------
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,300);
 
 @import "../bower_components/bootstrap-select/less/variables.less";
 
@@ -29,14 +28,16 @@
 
 @brand-link-datil: #98a1ac;
 @brand-success-datil: #35cc1f;
-@brand-color-main: #3cdbd6;
+@brand-color-main: #0cc4bb; // turquesa
 @brand-warning-datil: #ffa455;
-@brand-color-secondary: #ffbd65;
+@brand-color-secondary: #ffbd65; // naranja
+@gray-alt: #e4e8ea;
 
 @header-color: #68b555;
 
-@font-datil-thick: "Avenir LT W01_85 Heavy";
-@font-datil-medium: "Avenir LT W01_65 Medium";
+@font-datil-thick: 'Avenir LT W01_85 Heavy';
+@font-datil-medium: 'Avenir LT W01_65 Medium';
+@font-datil-regular: 'Avenir LT W01_55 Roman';
 
 //
 // Variables
@@ -51,8 +52,8 @@
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
 @gray-dark:              lighten(@gray-base, 20%);   // #333
 @gray:                   lighten(@gray-base, 33.5%); // #555
-@gray-light:             lighten(@gray-base, 46.7%); // #777
-@gray-lighter:           #d2d9dd;//lighten(@gray-base, 93.5%); // #eee
+@gray-light:             #d2d9dd;//lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           #f5f7f9;//lighten(@gray-base, 93.5%); // #eee
 
 @brand-primary:         #2e83d9;
 @brand-success:         #35ca1f;
@@ -82,13 +83,13 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "Avenir LT W01_35 Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  'Avenir LT W01_35 Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          14px;
+@font-size-base:          16px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
@@ -105,7 +106,7 @@
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
 //** By default, this inherits from the `<body>`.
-@headings-font-family:    "Avenir LT W01_65 Medium";
+@headings-font-family:    'Avenir LT W01_65 Medium';
 @headings-font-weight:    500;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
@@ -127,7 +128,7 @@
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 
-@padding-base-vertical:     6px;
+@padding-base-vertical:     8px;
 @padding-base-horizontal:   12px;
 
 @padding-large-vertical:    10px;
@@ -399,8 +400,8 @@
 @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
 
 // Navbar links
-@navbar-default-link-color:                #777;
-@navbar-default-link-hover-color:          #333;
+@navbar-default-link-color:                @text-color;
+@navbar-default-link-hover-color:          @brand-color-main;
 @navbar-default-link-hover-bg:             transparent;
 @navbar-default-link-active-color:         #555;
 @navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
@@ -425,8 +426,8 @@
 @navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
 
 // Inverted navbar links
-@navbar-inverse-link-color:                 lighten(@gray-light, 15%);
-@navbar-inverse-link-hover-color:           #fff;
+@navbar-inverse-link-color:                 #fff;//lighten(@gray-light, 15%);
+@navbar-inverse-link-hover-color:           darken(@gray-light, 10%);
 @navbar-inverse-link-hover-bg:              transparent;
 @navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
 @navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 10%);

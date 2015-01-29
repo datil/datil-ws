@@ -1,4 +1,3 @@
-@import "http://fast.fonts.net/cssapi/371b2904-9339-455d-95ba-eaef9d899e20.css";
 // Core variables and mixins
 @import "variables.less";
 @import "../bower_components/bootstrap/less/mixins.less";
@@ -55,15 +54,84 @@
 @import "../bower_components/font-awesome/less/font-awesome.less";
 @fa-font-path: "../fonts/font-awesome";
 
+// Libs
 @import "../bower_components/bootstrap-select/less/bootstrap-select.less";
+@import "../bower_components/odometer/themes/odometer-theme-minimal.css";
 
 @import "buttons.less";
 @import "home.less";
+@import "pricing.less";
 @import "faq.less";
 @import "gmaps.less";
 
 
+@font-face{
+font-family:"Avenir LT W01_35 Light";
+src:url("../fonts/avenir/3511a780-31ca-4ee1-9083-89b1b7185748.eot?#iefix");
+src:url("../fonts/avenir/3511a780-31ca-4ee1-9083-89b1b7185748.eot?#iefix") format("eot"),url("../fonts/avenir/c4352a95-7a41-48c1-83ce-d8ffd2a3b118.woff") format("woff"),url("../fonts/avenir/3e419b5b-c789-488d-84cf-a64009cc308e.ttf") format("truetype"),url("../fonts/avenir/ca038835-1be3-4dc5-ba25-be1df6121499.svg#ca038835-1be3-4dc5-ba25-be1df6121499") format("svg");
+}
+@font-face{
+font-family:"AvenirLTW01-35LightObli";
+src:url("../fonts/avenir/6500273c-8e8b-48d2-b0c0-dcae293c0120.eot?#iefix");
+src:url("../fonts/avenir/6500273c-8e8b-48d2-b0c0-dcae293c0120.eot?#iefix") format("eot"),url("../fonts/avenir/47fd1045-6e5b-4c87-9235-cfbc2b42cde7.woff") format("woff"),url("../fonts/avenir/60662abb-0ac3-46b2-930f-4719462489c9.ttf") format("truetype"),url("../fonts/avenir/9cf39ac2-87a5-4c4e-a604-7cece19d30bd.svg#9cf39ac2-87a5-4c4e-a604-7cece19d30bd") format("svg");
+}
+@font-face{
+font-family:"Avenir LT W01_45 Book";
+src:url("../fonts/avenir/4f32268f-fd86-4960-b72c-4bb1ba75ec6f.eot?#iefix");
+src:url("../fonts/avenir/4f32268f-fd86-4960-b72c-4bb1ba75ec6f.eot?#iefix") format("eot"),url("../fonts/avenir/939cba03-5b40-4d01-9bc5-7589eca863db.woff") format("woff"),url("../fonts/avenir/849bc5b9-a2ff-4343-977b-26ba8bd24a60.ttf") format("truetype"),url("../fonts/avenir/f67fa3b5-c1d1-488f-8e60-a828b9ad56a4.svg#f67fa3b5-c1d1-488f-8e60-a828b9ad56a4") format("svg");
+}
+@font-face{
+font-family:"AvenirLTW01-45BookObliq";
+src:url("../fonts/avenir/acc13cdc-338a-43e6-a156-e54a4c87582d.eot?#iefix");
+src:url("../fonts/avenir/acc13cdc-338a-43e6-a156-e54a4c87582d.eot?#iefix") format("eot"),url("../fonts/avenir/ca94ed56-18fc-4856-940a-70a072607c7c.woff") format("woff"),url("../fonts/avenir/dd6da407-70fe-4aa3-a1c7-64f0cb086f01.ttf") format("truetype"),url("../fonts/avenir/c7f424be-90e1-45b8-b617-ee3589a859bd.svg#c7f424be-90e1-45b8-b617-ee3589a859bd") format("svg");
+}
+@font-face{
+font-family:"Avenir LT W01_55 Roman";
+src:url("../fonts/avenir/2f5a6074-badc-4e08-83f1-ed67fe5c3d7c.eot?#iefix");
+src:url("../fonts/avenir/2f5a6074-badc-4e08-83f1-ed67fe5c3d7c.eot?#iefix") format("eot"),url("../fonts/avenir/b9ebb19d-88c1-4cbd-9baf-cf51972422ec.woff") format("woff"),url("../fonts/avenir/5ed4f98e-9044-4810-88ff-74d412c1351f.ttf") format("truetype"),url("../fonts/avenir/4cb16859-16ca-4342-b89c-292dc83266af.svg#4cb16859-16ca-4342-b89c-292dc83266af") format("svg");
+}
+@font-face{
+font-family:"AvenirLTW01-55Oblique";
+src:url("../fonts/avenir/8f21e618-9282-4df1-b556-73ee82bdd673.eot?#iefix");
+src:url("../fonts/avenir/8f21e618-9282-4df1-b556-73ee82bdd673.eot?#iefix") format("eot"),url("../fonts/avenir/3695342c-b5e2-4010-b0d4-56f563465922.woff") format("woff"),url("../fonts/avenir/2ba9f875-66d9-414d-a426-5a012b443475.ttf") format("truetype"),url("../fonts/avenir/0a88351a-e628-4b1f-99eb-3a729518af0a.svg#0a88351a-e628-4b1f-99eb-3a729518af0a") format("svg");
+}
+@font-face{
+font-family:"Avenir LT W01_65 Medium";
+src:url("../fonts/avenir/212ab03d-5db2-4d6a-b94c-171cc702aa51.eot?#iefix");
+src:url("../fonts/avenir/212ab03d-5db2-4d6a-b94c-171cc702aa51.eot?#iefix") format("eot"),url("../fonts/avenir/2cac77ec-9bc0-4ee7-87e4-27650190744f.woff") format("woff"),url("../fonts/avenir/aaf11848-aac2-4d09-9a9c-aac5ff7b8ff4.ttf") format("truetype"),url("../fonts/avenir/294099f3-8d00-4676-afc5-5e9d8d43ad69.svg#294099f3-8d00-4676-afc5-5e9d8d43ad69") format("svg");
+}
+@font-face{
+font-family:"AvenirLTW01-65MediumObl";
+src:url("../fonts/avenir/2a6f81a2-475c-4831-9949-33d7748ee561.eot?#iefix");
+src:url("../fonts/avenir/2a6f81a2-475c-4831-9949-33d7748ee561.eot?#iefix") format("eot"),url("../fonts/avenir/e0af2f49-a399-482b-a54e-d745e268ec80.woff") format("woff"),url("../fonts/avenir/6803d3dd-2107-45fc-ac8a-a4fa13771547.ttf") format("truetype"),url("../fonts/avenir/1bb1acb5-8d4e-4800-88af-dbcf1fe96ef8.svg#1bb1acb5-8d4e-4800-88af-dbcf1fe96ef8") format("svg");
+}
+@font-face{
+font-family:"Avenir LT W01_85 Heavy";
+src:url("../fonts/avenir/f61bf0f6-c193-4100-b940-12a1a01dcee5.eot?#iefix");
+src:url("../fonts/avenir/f61bf0f6-c193-4100-b940-12a1a01dcee5.eot?#iefix") format("eot"),url("../fonts/avenir/7147ec3a-8ff8-4ec9-8c5c-bd1571dc6ae6.woff") format("woff"),url("../fonts/avenir/d1dc54b2-878d-4693-8d6e-b442e99fef68.ttf") format("truetype"),url("../fonts/avenir/731dd4d3-64da-427d-ba61-01575b3cf3f7.svg#731dd4d3-64da-427d-ba61-01575b3cf3f7") format("svg");
+}
+@font-face{
+font-family:"AvenirLTW01-85HeavyObli";
+src:url("../fonts/avenir/7be0fdec-384a-42b5-ab27-c60a322cde7d.eot?#iefix");
+src:url("../fonts/avenir/7be0fdec-384a-42b5-ab27-c60a322cde7d.eot?#iefix") format("eot"),url("../fonts/avenir/53554f6f-4b01-4815-87fe-82c49b8ba5a9.woff") format("woff"),url("../fonts/avenir/28dfedaf-6372-45a1-8833-b3078dc56a21.ttf") format("truetype"),url("../fonts/avenir/f747b6ee-4d13-4e45-815d-f33ac1b71d63.svg#f747b6ee-4d13-4e45-815d-f33ac1b71d63") format("svg");
+}
+@font-face{
+font-family:"Avenir LT W01_95 Black";
+src:url("../fonts/avenir/a24b3f55-c8c8-41a1-a77e-7cdf417d82f6.eot?#iefix");
+src:url("../fonts/avenir/a24b3f55-c8c8-41a1-a77e-7cdf417d82f6.eot?#iefix") format("eot"),url("../fonts/avenir/5a05cf7f-f332-456f-ae67-d8c26e0d35b3.woff") format("woff"),url("../fonts/avenir/c33278bc-988e-440b-b4be-6acc095e6044.ttf") format("truetype"),url("../fonts/avenir/7bdad4a5-289b-42f9-b6fa-c5883b9e9f23.svg#7bdad4a5-289b-42f9-b6fa-c5883b9e9f23") format("svg");
+}
+@font-face{
+font-family:"AvenirLTW01-95BlackObli";
+src:url("../fonts/avenir/fbf3e69b-73b2-406d-84bc-feda30a0a563.eot?#iefix");
+src:url("../fonts/avenir/fbf3e69b-73b2-406d-84bc-feda30a0a563.eot?#iefix") format("eot"),url("../fonts/avenir/36ec15b9-f8da-447f-8fed-a9cfdfb91fbb.woff") format("woff"),url("../fonts/avenir/230d6b14-6d44-4dd5-a6ae-a4287936e51e.ttf") format("truetype"),url("../fonts/avenir/9bce4920-94e2-4e4d-bd34-818801dd3eb3.svg#9bce4920-94e2-4e4d-bd34-818801dd3eb3") format("svg");
+}
+
+
 //Global elements
+
+.container {
+	width: 1020px;
+}
 
 b, strong{
 	font-weight: 600;
@@ -80,6 +148,15 @@ h2{
 }
 
 //Classes
+
+.label-inverse {
+	background-color: @text-color;
+}
+
+strong {
+	font-family: @font-datil-thick;
+	font-weight: 400;
+}
 
 .text-uppercase {
 	text-transform: uppercase;
@@ -170,7 +247,7 @@ h2{
 	&.navbar-nav {
 		@media (min-width: @grid-float-breakpoint) {
 			position: absolute;
-			margin-left: -208.5px;
+			margin-left: -236px;
 			left: 50%;
 		}
 	}
@@ -195,41 +272,96 @@ section{
 	}
 }
 
-footer{
-	background-color: @text-color-datil;
-	color: #FFF;
-	padding-top: 3%;
-	header{
-		h5{
-			font-weight: bold;
+footer {
+	.nav li a {
+		color: #98a1ac;
+	}
+	.container {
+		max-width: 920px;
+	}
+	.nav li a {
+		padding-left: 8px;
+		padding-right: 8px;
+		.transition(all 0.6s ease-out);
+	}
+	.nav li a:hover, .nav li a:active {
+		color: #fff;
+		background: none;
+	}
+	color: #98a1ac;
+	font-size: 13px;
+	background-color: #41474f;
+	padding-top: 20px;
+	padding-bottom: 42px;
+	.copy {
+		height: @navbar-height;
+		padding: 0 15px 0 5px;
+		line-height: @navbar-height;
+		white-space: nowrap;
+	}
+}
+
+footer .footer-top {
+	height: 60px;
+	margin: 0;
+	.navbar-nav {
+		@media (min-width: @grid-float-breakpoint) {
+			// float: right;
 		}
 	}
-	ul{
-		li{
-			a{
-				color: #fff;
+	.nav li a {
+		// text-transform: uppercase;
+		// font-size: 11px;
+	}
+}
+
+footer .footer-bottom {
+	height: 60px;
+	margin-top: -18px;
+	// background-color: #292e33;
+}
+
+footer .social-links {
+	height: 40px;
+	margin: 10px 0;
+	text-align: right; 
+	.button {
+		width: 40px;
+		height: 40px;
+		background: url(../images/social-sprite.png) no-repeat;
+		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+			background: url(../images/social-sprite@2x.png) no-repeat;
+			background-size: 120px;
+		}
+		display: inline-block;
+		margin-left: 5px;
+		&.tw {
+			background-position: 0 0;
+			&:hover {
+				background-position: 0 -40px;
+			}
+			&:active {
+				background-position: 0 -80px;
 			}
 		}
-	}
-	.logo-footer{
-		width: 10%;
-	}
-	footer{
-		margin-top: 3%;
-		background-color: @bg-gray-strong-datil;
-		padding: 5% 10% 2% 10%;
-		hr{
-			margin-top: 5%;
-		}
-		.pull-left{
-			max-width: 150px;
-			a{
-				margin-right: 20px;
+		&.fb {
+			background-position: -40px 0;
+			&:hover {
+				background-position: -40px -40px;
+			}
+			&:active {
+				background-position: -40px -80px;
 			}
 		}
-	}
-	hr{
-		border-width: 0.25px 0px 0px;
+		&.email {
+			background-position: -80px 0;
+			&:hover {
+				background-position: -80px -40px;
+			}
+			&:active {
+				background-position: -80px -80px;
+			}
+		}
 	}
 }
 
@@ -246,55 +378,65 @@ footer{
 
 .fade {
 	opacity: 0;
-	-webkit-transition: opacity 0.18s linear;
-	-o-transition: opacity 0.18s linear;
-	transition: opacity 0.18s linear;
+	.transition(opacity 0.18s linear);
 }
 
 fade.in {
 	opacity: 1;
 }
 
+.navbar {
+	.transition(all 220ms ease-out);
+	.navbar-brand {
+		background: url('../images/logo.png') no-repeat 10px 10px;
+		background-size: 102px 40px;
+		width: 122px;
+	}
+}
+.navbar {
+	.btn-outline {
+		color: #fff;
+		background-color: @text-color; 
+		border-color: @text-color;
+	}
+}
+.navbar-default {
+	background-color: rgba(255,255,255,0.98);
+	border-bottom-color: @gray-light;
+}
+.navbar-default .navbar-toggle {
+	border-color: @text-color;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: @text-color;
+}
+
+.navbar-inverse {
+	.btn-outline {
+		color: @text-color;
+		background-color: #fff;
+		border-color: #fff;
+	}
+	.btn-outline:hover {
+		color: #fff;
+	}
+}
+
 .home {
-	.navbar-default {
+	.navbar-inverse {
 		background-color: transparent;
 		border-color: transparent;
 	}
-	.navbar-default .navbar-nav > li > a {
-		color: #fff;
+	.navbar-inverse .navbar-nav > li > a {
+		
 	}
 	&.is-scrolled {
-		.navbar {
-			.navbar-brand {
-				background: url('../images/logo.png') no-repeat 10px 10px;
-				background-size: 102px 40px;
-			}
-		}
-		.navbar-default .navbar-nav > li > a {
-			color: @text-color;
-		}
-		.navbar {
-			.btn-outline {
-				color: @text-color;
-				border-color: @text-color;
-			}
-		}
-		.navbar-default {
-			background-color: rgba(255,255,255,0.98);
-		}
-		.navbar-default .navbar-toggle {
-			border-color: @text-color;
-		}
-		.navbar-default .navbar-toggle .icon-bar {
-			background-color: @text-color;
-		}
 	}
 	header {
-		.navbar {
+		.navbar-inverse {
 			.navbar-brand {
 				background: url('../images/logo-white.png') no-repeat 10px 10px;
 				background-size: 102px 40px;
-				width: 122px;
 			}
 		}
 	}
@@ -307,6 +449,10 @@ fade.in {
 	.navbar-default .navbar-toggle .icon-bar {
 		background-color: #fff;
 	}
+}
+
+#page {
+	overflow: hidden;
 }
 
 #page-about-us, #page-contact{

@@ -1,5 +1,6 @@
 .btn {
   text-transform: uppercase;
+  font-family: @font-datil-medium;
 }
 
 .btn-lg {
@@ -8,8 +9,13 @@
 }
 
 .btn-outline {
-  .button-variant(#fff; transparent; #fff);
+  .button-variant(@text-color; #fff; #fff);
+  &:hover {
+    background-color: @brand-color-main !important;
+    border-color: @brand-color-main !important;
+    color: #fff;
+  }
 }
 .btn-outline-inverse {
-  .button-variant(#fff; transparent; #fff);
+  .button-variant(#fff; @text-color; #fff);
 }

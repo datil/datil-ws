@@ -1,11 +1,39 @@
 (function() {
+  window.odometerOptions = {
+    // animation: 'count'
+  };
   $(document).ready(function() {
-    $(window).scroll(function(e) {
-      if ($(window).scrollTop() > 90) {
-        $(".home").addClass("is-scrolled");
-      } else {
-        $(".home").removeClass("is-scrolled");
+    navScrollSpy();
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000, 'swing');
+          return false;
+        }
       }
     });
+
+    $(window).scroll(function(e) {
+      navScrollSpy();
+    });
   });
+
+  var navScrollSpy = function () {
+    if ($(".home").length) {
+      if ($(window).scrollTop() > 60) {
+        $(".home").addClass("is-scrolled");
+        $(".home header > .navbar").removeClass("navbar-inverse");
+      } else {
+        $(".home").removeClass("is-scrolled");
+        $(".home header > .navbar").addClass("navbar-inverse");
+      }
+    } else {
+      $("header > .navbar").removeClass("navbar-inverse");
+    }
+  }
+
 }).call(this);

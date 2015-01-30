@@ -19,8 +19,6 @@
   }
 
   var devicesFadeIn = function (scrollTop) {
-    // console.log(scrollTop);
-    // console.log(($("#devices").offset()["top"] - 120));
     if (scrollTop >= ($("#devices").offset()["top"] - $(window).height()) &&
         $(".devices > .device-img:first-child img").css("opacity") != "1") {
       $(".devices > .device-img:first-child").addClass("in");
@@ -50,6 +48,8 @@
   $(document).ready(function() {
     navScrollSpy();
     initSmoothScroll();
+
+    $("#intro-datil").css({"height": $(window).height()});
 
     $(window).scroll(function(e) {
       navScrollSpy();

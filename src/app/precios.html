@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Datil - Mundo</title>
+    <title>Datil - Facturación Electrónica</title>
     <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="styles/main.css">
@@ -42,7 +42,7 @@
               <li><a href="contacto.html">Contacto</a></li>
             </ul>
             <div class="navbar-right">
-              <ul class="nav navbar-nav">
+              <ul class="nav navbar-nav hidden-sm">
                 <li>
                   <a href="">Regístrate</a>
                 </li>
@@ -59,16 +59,77 @@
       <div class="container">
         <h1>Precios claros. Sin contratos, sólo paga lo que utilizas</h1>
         <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <div class="well">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="cart">
               <div class="cart-item">
                 <div class="row">
-                  <div class="col-md-9">
-                    Certificado Digital
-                    
+                  <div class="col-sm-9 item-desc">
+                    <p>Certificado Digital
+                      <i data-toggle="tooltip"
+                         data-placement="bottom"
+                         title="Un certificado digital es necesario para el proceso de firmado digital de los comprobantes."
+                         class="glyphicon glyphicon-question-sign"></i></p>
                   </div>
-                  <div class="col-md-3 item-price">$49.00</div>
+                  <div class="col-sm-3 item-price">$49.00</div>
                 </div>
+              </div>
+              <div class="cart-item">
+                <div class="row">
+                  <div class="col-sm-6 item-desc">
+                    <p>Comprobantes electrónicos</p>
+                  </div>
+                  <div class="col-sm-4">
+                      <!-- <div class="form-group">
+                        <input class="form-control" type="number" id="" />
+                      </div> -->
+                      <div class="input-group number-spinner">
+                        <span class="input-group-btn data-dwn">
+                          <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+                        </span>
+                        <input type="text" class="form-control text-center" value="100" min="100" max="9999999999999999999999999999999999999">
+                        <span class="input-group-btn data-up">
+                          <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+                        </span>
+                      </div>
+                  </div>
+                  <div id="plan-price" class="col-sm-2 item-price">$0.00</div>
+                </div>
+              </div>
+    
+              <div class="cart-totals">
+                <div class="total">
+                  <div class="row">
+                    <div class="col-sm-8 title">
+                      Subtotal
+                    </div>
+                    <div class="col-sm-4" id="subtotal">
+                      $49.00
+                    </div>
+                  </div>
+                </div>
+                <div class="total">
+                  <div class="row">
+                    <div class="col-sm-8 title">
+                      IVA
+                    </div>
+                    <div class="col-sm-4" id="tax">
+                      $5.88
+                    </div>
+                  </div>
+                </div>
+                <div class="total">
+                  <div class="row">
+                    <div class="col-sm-8 title">
+                      Total
+                    </div>
+                    <div class="col-sm-4" id="total">
+                      $54.88
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons">
+                <button type="button" class="btn btn-large btn-primary">Comprar</button>
               </div>
             </div>
           </div>
@@ -86,7 +147,7 @@
     							<li>
     								<a href="">Características</a>
     							</li>
-    							<li><a href="">&bull;</a></li>
+    							<li><a href=""></a></li>
     							<li>
     								<a href="">Precios</a>
     							</li>
@@ -94,15 +155,15 @@
     							<li>
     								<a href="">Clientes</a>
     							</li> -->
-    							<li><a href="">&bull;</a></li>
+    							<li><a href=""></a></li>
     							<li>
     								<a href="">Contacto</a>
     							</li>
-    							<li><a href="">&bull;</a></li>
+    							<li><a href=""></a></li>
     							<li>
     								<a href="">Acerca de Dátil</a>
     							</li>
-    							<li><a href="">&bull;</a></li>
+    							<li><a href=""></a></li>
     							<li>
     								<a href="" class="help">Ayuda</a>
     							</li>
@@ -195,7 +256,7 @@
 <!-- endbuild -->
 <!-- build:js scripts/main.js -->
 <script src="scripts/main.js"></script>
-<script src="scripts/hello.js"></script>
+<script src="scripts/pricing.js"></script>
 <script type="text/javascript">
 var MTIProjectId='371b2904-9339-455d-95ba-eaef9d899e20';
  (function() {

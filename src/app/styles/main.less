@@ -128,9 +128,10 @@ src:url("../fonts/avenir/fbf3e69b-73b2-406d-84bc-feda30a0a563.eot?#iefix") forma
 
 
 //Global elements
-
-.container {
-	width: 1020px;
+@media ( min-width: @screen-md ) {
+	.container {
+		width: 1020px;
+	}
 }
 
 b, strong{
@@ -381,7 +382,7 @@ footer .social-links {
 	.transition(opacity 0.18s linear);
 }
 
-fade.in {
+.fade.in {
 	opacity: 1;
 }
 
@@ -405,10 +406,11 @@ fade.in {
 	border-bottom-color: @gray-light;
 }
 .navbar-default .navbar-toggle {
-	border-color: @text-color;
+	border-color: transparent;
 }
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: @text-color;
+	background-color: @brand-color-main;
+	height: 3px;
 }
 
 .navbar-inverse {
@@ -420,6 +422,10 @@ fade.in {
 	.btn-outline:hover {
 		color: #fff;
 	}
+}
+
+.navbar .navbar-right .btn {
+	text-transform: none;
 }
 
 .home {
@@ -438,17 +444,17 @@ fade.in {
 				background: url('../images/logo-white.png') no-repeat 10px 10px;
 				background-size: 102px 40px;
 			}
+			.navbar-toggle .icon-bar {
+				background-color: #fff;
+			}
 		}
 	}
-	.navbar .navbar-right .btn {
-		text-transform: none;
-	}
-	.navbar-default .navbar-toggle {
-		border-color: #fff;
-	}
-	.navbar-default .navbar-toggle .icon-bar {
-		background-color: #fff;
-	}
+	// .navbar-default .navbar-toggle {
+	// 	border-color: #fff;
+	// }
+	// .navbar-default .navbar-toggle .icon-bar {
+	// 	background-color: #fff;
+	// }
 }
 
 #page {

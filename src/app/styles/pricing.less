@@ -1,4 +1,13 @@
 .pricing {
+  .number-spinner .btn {
+    min-height: 40px;
+  }
+  .cart {
+    padding: 30px;
+    background: #fff;
+    border: 1px solid @gray-light;
+    border-radius: 3px;
+  }
   background: @gray-lighter;
   .container {
     padding: 80px;
@@ -9,61 +18,66 @@
   h1 {
     margin-bottom: 50px;
     font-size: 30px;
+    text-align: center;
+    font-family: @font-datil-light;
   }
-  .plan {
+  .cart-item {
+    border-bottom: 1px solid darken(@gray-lighter, 7%);
+    margin-bottom: 15px;
+    .item-desc {
+      p {
+        line-height: 40px;
+      }
+    }
+    .form-group {
+      margin-bottom: 0;
+    }
+    .item-price {
+      font-family: @font-datil-regular;
+      text-align: right;
+      line-height: 40px;
+    }
+  }
+  .cart-totals {
+    .total {
+      text-align: right;
+      line-height: 30px;
+    }
+    .title {
+      font-family: @font-datil-regular;
+    }
+  }
+  .buttons {
+    padding: 25px 0 10px;
+    text-align: center;
+    .btn {
+      min-width: 200px;
+    }
+  }
+}
+
+@media ( max-width: 585px ) {
+  .input-group span.input-group-btn,.input-group input,.input-group button {
+    display: block;
+    width: 100%;
+    border-radius: 0;
     margin: 0;
-    padding: 0;
-    .plan-header {
-      padding: 10px;
-      color: #fff;
-      h4 {
-        font-size: 16px;
-        margin: 10px 0 20px;
-      }
-      .amount {
-        font-size: 44px;
-        line-height: 1.1;
-      }
-      .period {
-        font-size: 12px;
-        margin-bottom: 15px;
-      }
-      h4, .period {
-        font-family: @font-datil-regular;
-      }
-    }
-    .plan-features > div {
-      min-height: 40px;
-      padding: 10px;
-      .call-to-action {
-        padding: 18px 10px;
-      }
-    }
-    .plan-features > div:nth-child(even) {
-      background-color: #fff;
-    }
   }
-  .plan:first-child {
-    .plan-header {
-      background-color: #00d8d8;
-    }
-    .plan-header:hover {
-      background-color: lighten(#00d8d8, 2);
-    }
+  .input-group {
+    position: relative;
   }
-  .plan:nth-child(2) {
-    .plan-header {
-      background-color: #2dadba;
-    }
+  .input-group span.data-up {
+    position: absolute;
+    top: 0;
   }
-  .plan:nth-child(3) {
-    .plan-header {
-      background-color: #3a7e8e;
-    }
+  .input-group span.data-dwn {
+    position: absolute;
+    bottom: 0;
   }
-  .plan:last-child {
-    .plan-header {
-      background-color: #105263;
-    }
+  .form-control.text-center {
+    margin: 34px 0;
+  }
+  .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+    margin-left:0;
   }
 }

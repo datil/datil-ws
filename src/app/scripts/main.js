@@ -2,8 +2,35 @@
   window.odometerOptions = {
     // animation: 'count'
   };
-  $(document).ready(function() {
-    navScrollSpy();
+  var navScrollSpy = function () {
+    if ($(".home").length) {
+      var scrollTop = $(window).scrollTop();
+      if (scrollTop > 60) {
+        $(".home").addClass("is-scrolled");
+        $(".home header > .navbar").removeClass("navbar-inverse");
+      } else {
+        $(".home").removeClass("is-scrolled");
+        $(".home header > .navbar").addClass("navbar-inverse");
+      }
+      devicesFadeIn(scrollTop);
+    } else {
+      $("header > .navbar").removeClass("navbar-inverse");
+    }
+  }
+
+  var devicesFadeIn = function (scrollTop) {
+    // console.log(scrollTop);
+    // console.log(($("#devices").offset()["top"] - 120));
+    if (scrollTop >= ($("#devices").offset()["top"] - $(window).height()) &&
+        $(".devices > .device-img:first-child img").css("opacity") != "1") {
+      $(".devices > .device-img:first-child").addClass("in");
+      setTimeout(function() {
+        $("#devices").css({"overflowY": "visible"});
+      }, 800);
+    }
+  }
+
+  var initSmoothScroll = function () {
     $('a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
@@ -16,24 +43,16 @@
         }
       }
     });
+  }
+
+
+
+  $(document).ready(function() {
+    navScrollSpy();
+    initSmoothScroll();
 
     $(window).scroll(function(e) {
       navScrollSpy();
     });
   });
-
-  var navScrollSpy = function () {
-    if ($(".home").length) {
-      if ($(window).scrollTop() > 60) {
-        $(".home").addClass("is-scrolled");
-        $(".home header > .navbar").removeClass("navbar-inverse");
-      } else {
-        $(".home").removeClass("is-scrolled");
-        $(".home header > .navbar").addClass("navbar-inverse");
-      }
-    } else {
-      $("header > .navbar").removeClass("navbar-inverse");
-    }
-  }
-
 }).call(this);

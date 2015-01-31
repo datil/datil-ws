@@ -236,10 +236,8 @@
       top: -21px;
     }
     @media (max-width: @screen-sm-min) {
-      img {
-        position: relative;
-        top: 0;
-      }
+      position: relative;
+      top: 96px;
     }
   }
   .device-img:first-child {
@@ -354,6 +352,9 @@
   div.info {
     margin-top: 5px;
     width: 320px;
+    @media (max-width: @screen-sm-min) {
+      width: auto;
+    }
   }
 }
 
@@ -395,6 +396,10 @@
   }
   .text-center {
     width: 630px;
+    @media (max-width: @screen-sm-min) {
+      width: auto;
+      padding: 10px;
+    }
     margin: 0 auto;
   }
 }
